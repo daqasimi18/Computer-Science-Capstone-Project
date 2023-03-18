@@ -9,3 +9,7 @@ The following steps are taken for creating the age detection software
 * CNN layers of analysis, including the Flatten and Dense methods in the photo analysis layers. 
 * Save the model in a file located in the same directory as ageDetection.py, and the model is then loaded from the saved file. This can avoid retraining the model every time the code is run, which is convenient.
 * Provide the index of the photo you want to predict the age from.
+* Currently the output of the program looks like the following
+<br />  Original Age: 50
+<br />  1/1 [==============================] - 0s 224ms/step
+<br />  Predicted Age: 46
