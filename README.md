@@ -1,6 +1,6 @@
 The following steps are taken for creating the age detection software
 * Import the necessary libraries 
-* Identify the path to the dataset and read the dataset. Currently, the dataset is located in the same directory  in the ageDetection.py file is located.
+* Identify the path to the dataset and read the dataset. The dataset was a big file that couldn't be included on this repository, but a copy of it can be found here https://www.kaggle.com/datasets/jangedoo/utkface-new. 
 * Parse the name of each photo, where the first parameter is age, and the second parameter is gender.
 * Transform the dataset to a data frame so it's easier to locate information.
 * Classify female and male genders where 0 represents male and 1 is female. 
