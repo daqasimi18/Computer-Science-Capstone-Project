@@ -108,7 +108,7 @@ output_2 = Dense(1, activation='relu', name='age_out') (dropout_2)
 convolution_model = Model(inputs=[inputs], outputs=[output_1, output_2])
 convolution_model.compile(loss=['binary_crossentropy', 'mae'], optimizer='adam', metrics=['accuracy'])
 
-if os.path.exists('/eccs/home/daqasimi18/CS488/saved_trained_convolution_model.h5') == True:
+if os.path.exists('./saved_trained_convolution_model.h5') == True:
     trained_convolution_model = tf.keras.models.load_model("saved_trained_convolution_model.h5")
     image_index = 100
     print("Original Age:", photo_age[image_index])
@@ -142,7 +142,7 @@ else:
     #plt.title('Loss Graph')
     #plt.legend()
     #plt.show()
-    image_index = 100
+    image_index = 13103
     print("Original Age:", photo_age[image_index])
     # predict from convolution_model
     pred = trained_convolution_model.predict(image[image_index].reshape(1, 128, 128, 1))
